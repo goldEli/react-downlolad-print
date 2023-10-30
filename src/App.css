@@ -1,0 +1,14 @@
+.print {
+  width: 500px;
+  /* height: 500px; */
+  background-color: #999;
+}
+
+.printFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: auto */
+}
