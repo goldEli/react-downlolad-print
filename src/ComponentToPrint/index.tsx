@@ -60,24 +60,27 @@ import * as React from "react";
 //     );
 //   }
 // }
+interface IProps {}
 
-export const FunctionalComponentToPrint = React.forwardRef(
-  (props, ref) => {
-    // eslint-disable-line max-len
-    return <div ref={ref}>
-
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-        <h1>那伤害吉娜可</h1>
-    </div>;
-  }
-);
+export const FunctionalComponentToPrint = React.forwardRef<
+  HTMLDivElement,
+  IProps
+>((props, ref) => {
+  // eslint-disable-line max-len
+  return (
+    <div ref={ref}>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+      <h1>那伤害吉娜可</h1>
+    </div>
+  );
+});

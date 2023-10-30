@@ -80,7 +80,13 @@ export const FunctionalComponent = () => {
         onBeforePrint={handleBeforePrint}
         trigger={reactToPrintTrigger}
       />
-      <button onClick={toPDF}>Download</button>
+      <button
+        onClick={() => {
+          toPDF();
+        }}
+      >
+        Download
+      </button>
       {loading && <p className="indicator">onBeforeGetContent: Loading...</p>}
       <div ref={targetRef}>
         <FunctionalComponentToPrint ref={componentRef} />
